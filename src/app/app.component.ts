@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+
+import { Component } from '@angular/core';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MessageComponent } from "./message/message.component";
+
 @Component({
     selector: 'app-root',
     standalone: true,
