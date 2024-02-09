@@ -1,0 +1,26 @@
+<!-- <div *ngFor="let hero of heroes"> {{hero.name}}</div> -->
+<!-- <button type="button" (click)="selectHero(hero)" (click)="messageService.add('klik')" [class.selected]="hero === selectedHero"> -->
+
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{ hero.id }}">
+      <span class="badge">{{ hero.id }}</span> {{ hero.name }}
+    </a>
+    <!-- <button type="button" (click)="selectHero(hero)" [class.selected]="hero === selectedHero">
+      <span class="badge">{{ hero.id }}</span>
+      <span class="name">{{ hero.name }}</span>
+    </button> -->
+  </li>
+</ul>
+<!-- <button type="button" (click)="cancelSelection()">Remove Selection</button> -->
+<!-- <app-hero-detail [selectedHero]="selectedHero"></app-hero-detail> -->
+
+<!-- <div *ngIf="selectedHero">
+  <h2>{{ selectedHero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ selectedHero.id }}</div>
+  <div>
+    <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="selectedHero.name" placeholder="name" />
+  </div>
+</div> -->
